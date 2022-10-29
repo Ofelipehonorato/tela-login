@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #111111;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #222222 25%, transparent 25%), linear-gradient(225deg, #222222 25%, transparent 25%), linear-gradient(45deg, #222222 25%, transparent 25%), linear-gradient(315deg, #222222 25%, #111111 25%);
+  background-position:  4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+  min-height: 100vh;  
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;  
+}
+
+.App-form{
+  width: 330px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: rgb(150, 150, 255) 0px 0px 250px;
+  border: #0f0f0f 2px solid;
+  padding: 18px;
+  background-color: rgb(31, 31, 141);
+}
+
+form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;  
+}
+
+#App-email, #App-password{
+  margin: 6px;
+}
+
+h1, h3{
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Dancing Script', cursive;
+}
+
+label {
+  padding: 6px;
+  text-align: center;
+  font-weight: lighter;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  color: #888;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  height: 40px;
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#button{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 80px;
 }
